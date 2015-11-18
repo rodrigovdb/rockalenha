@@ -15,7 +15,9 @@ var paths = {
   sass          : './src/sass/*.scss',
   coffee        : './src/coffee/*.coffee',
   jade          : './src/jade/*.jade',
-  images        : './src/images/*',
+
+  images        : './src/images/*/*',
+
   jquery        : './bower_components/jquery/dist/jquery.min.js',
   bootstrap_js  : './bower_components/bootstrap/dist/js/bootstrap.min.js',
   bootstrap_css : './bower_components/bootstrap/dist/css/*.min.css',
