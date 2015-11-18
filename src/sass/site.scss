@@ -4,4 +4,25 @@
 body{
   background-color  : #efefef;
   color             : #555;
+  font-family       : Helvetica, Arial;
+}
+
+div#intro{
+  background        : rgba(0, 0, 0, 0) url("../img/pics/citra.jpg") no-repeat fixed 0 0 / 100% auto;
+
+  img{
+    width           : 100%;
+  }
+}
+
+div#contact{
+}
+
+.section{
+  border              : solid 5px #ccc;
+  height              : 530px;
+
+  h1{
+    text-align        : center;
+  }
 }

@@ -1,3 +1,17 @@
-a(href='#', onclick="$('#menu').slideToggle(); return false;", name='contacts_anchor')
-  img(src='images/contacts/contact.png', alt='[Contatos]', title='Contate-nos')
+//a(href='#', onclick="$('#menu').slideToggle(); return false;", name='contacts_anchor')
+  img(src='img/contacts/contact.png', alt='[Contatos]', title='Contate-nos')
   span Contatos
+
+h1 Contatos
+
+ul
+  li
+    a#skype(onclick="Skype.tryAnalyzeSkypeUri('chat', '0');" href="skype:rodrigovdb?chat") Skype
+  li
+    a#facebook(target="_BLANK" href="https://www.facebook.com/RockaLenha") Facebook
+  li
+    a#facebook(target="_BLANK" href="https://soundcloud.com/rockalenha") Soundcloud
+  li
+    a#facebook(target="_BLANK" href="https://www.youtube.com/channel/UCeRfrQ33igiZ16efTNMuSMQ") Youtube
+  li
+    a#facebook(target="_BLANK" href="mailto:contato@rockalenha.com.br?Subject=Contato%20Via%20Site") Email

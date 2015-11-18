@@ -2,9 +2,17 @@ extends layouts/main.jade
 
 block content
   //div#header.section(data-stellar-background-ratio='0.5')
-  div#header.section
-    | Header image
+  div#intro.section
+    include includes/_intro.jade
+
   div#contact.section
-    | Contatos
+    include includes/_contact.jade
+
   div#watch.section
-    | Assista
+    include includes/_watch.jade
+
+  div#listen.section
+    include includes/_listen.jade
+
+  div#about.section
+    include includes/_about.jade

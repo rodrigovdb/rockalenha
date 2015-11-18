@@ -1,1 +1,2 @@
-alert 'oi'
+$(document).ready ->
+  alert 'oee'
