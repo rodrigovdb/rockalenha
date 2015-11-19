@@ -1,17 +1,33 @@
-//a(href='#', onclick="$('#menu').slideToggle(); return false;", name='contacts_anchor')
-  img(src='img/contacts/contact.png', alt='[Contatos]', title='Contate-nos')
-  span Contatos
-
-h1 Contatos
-
-ul
-  li
-    a#skype(onclick="Skype.tryAnalyzeSkypeUri('chat', '0');" href="skype:rodrigovdb?chat") Skype
-  li
-    a#facebook(target="_BLANK" href="https://www.facebook.com/RockaLenha") Facebook
-  li
-    a#facebook(target="_BLANK" href="https://soundcloud.com/rockalenha") Soundcloud
-  li
-    a#facebook(target="_BLANK" href="https://www.youtube.com/channel/UCeRfrQ33igiZ16efTNMuSMQ") Youtube
-  li
-    a#facebook(target="_BLANK" href="mailto:contato@rockalenha.com.br?Subject=Contato%20Via%20Site") Email
+#contact
+  a(href='#', onclick="$('#menu').slideToggle(); return false;", name='contacts_anchor')
+    img(src='img/contacts/contact.png', alt='[Contatos]', title='Contate-nos')
+    span Contatos
+#menu.container_item(style='display: none')
+  #menu_items
+    .menu_item
+      a(href='skype:rodrigovdb?chat', onclick="Skype.tryAnalyzeSkypeUri('chat', '0');")
+        img(src='img/contacts/skype.png', title='Entre em contato via Skype', alt='[Skype]')
+      span.menu_item_title Skype
+    //
+      <div class="menu_item">
+      <a href="whatsapp://send?abid=rodrigovdb&text=Hello%2C%20World!">
+      <img src="img/contacts/whatsapp.png" title="Entre em contato via Whats App" alt="[WhatsApp]" />
+      </a>
+      <span class="menu_item_title">Whats App</span>
+      </div>
+    .menu_item
+      a(href='https://www.facebook.com/RockaLenha', target='_BLANK')
+        img(src='img/contacts/facebook.png', title='Acesse a fanpage do Rock a Lenha no Facebook', alt='[Facebook]')
+      span.menu_item_title Facebook
+    .menu_item
+      a(href='https://soundcloud.com/rockalenha', target='_BLANK')
+        img(src='img/contacts/soundcloud.png', title='Acesse o perfil do Rock a Lenha no Sound Cloud', alt='[Sound Cound]')
+      span.menu_item_title Soundcloud
+    .menu_item
+      a(href='https://www.youtube.com/channel/UCeRfrQ33igiZ16efTNMuSMQ', target='_BLANK')
+        img(src='img/contacts/youtube.png', title='Acesse o canal do Rock a Lenha no Youtube', alt='[Youtube]')
+      span.menu_item_title Youtube
+    .menu_item
+      a(href='mailto:contato@rockalenha.com.br?Subject=Contato%20Via%20Site')
+        img(src='img/contacts/email.png', title='Entre em contato com o Rock a Lenha', alt='[Contato]')
+      span.menu_item_title Email

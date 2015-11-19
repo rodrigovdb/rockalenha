@@ -1,28 +1,173 @@
+/*
+Plugin: jQuery Parallax
+Version 1.1.3
+Author: Ian Lunn
+Twitter: @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+*/
+
 @charset "utf-8";
 /* CSS Document */
 
 body{
-  background-color  : #efefef;
-  color             : #555;
-  font-family       : Helvetica, Arial;
+  margin: 0;
+  min-width: 980px;
+  padding: 0;
+  font-family: helvetica;
+  color: #555;
 }
 
-div#intro{
-  background        : rgba(0, 0, 0, 0) url("../img/pics/citra.jpg") no-repeat fixed 0 0 / 100% auto;
+#intro{
+  background       :url(../img/pics/citra.jpg) 0px 0px no-repeat fixed;
+  background-size    : 100%;
+  color         : white;
+  height         : 440px;
+  margin         : 0 auto;
+  padding       : 0;
+}
 
-  img{
-    width           : 100%;
+#second{
+  /*background: url(../img/pics/promo.jpg) 50% 0 no-repeat fixed;*/
+}
+
+#third{
+  /*background: url(../img/pics/the_patch.jpg) 0 0 no-repeat fixed;*/
+}
+
+#fifth{
+  background: #fff;
+  color: #555;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 35px;
+    font-size: 18px;
+}
+
+.story{
+  margin: 0 auto;
+  min-width: 980px;
+  overflow: auto;
+  width: 980px;
+}
+
+.story .float-left, .story .float-right{
+  padding: 100px 0 0 0;
+  position: relative;
+  width: 350px;
+}
+
+h3.section_title{
+  text-align: center;
+}
+
+.table{
+  display: table;
+  width: 100%;
+}
+
+.table_row{
+  display: table-row;
+}
+
+.table_cell{
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+}
+
+iframe{
+  margin: 20px 0px;
+}
+
+#fifth p{
+  text-align            : justify;
+}
+
+#menu{
+  border-bottom : solid 2px #ccc;
+  padding       : 70px 0px 0px 0px;
+  height        : 180px;
+  text-align    : center;
+  color         : #777;
+}
+
+#menu_items{
+  width         : 90%;
+  margin         : 0px auto;
+}
+
+#menu_items img{
+  width         : 100px;
+}
+
+#menu .menu_item{
+  float         : left;
+  width         : 20%;
+  padding       : 20px 0px;
+}
+
+.menu_item_title{
+  display        : block;
+  font-weight      : bold;
+}
+
+.menu_item_description{
+  display        : block;
+  font-style      : italic;
+  font-size       : 13px;
+}
+
+#contact{
+  position       : absolute;
+  left         : 10px;
+  width         : 90px;
+  margin-top       : -50px;
+  text-align       : center;
+}
+
+#contact a{
+  text-decoration   : none;
+}
+
+#contact a img{
+  width         : 100%;
+  border         : 0px;
+}
+
+#contact span{
+  margin-top       : 10px;
+  text-align      : center;
+  display       : block;
+  color         : #000;
+  font-size       : 18px;
+}
+
+#intro span{
+  background-color   : #000;
+  border         : solid 5px #fff;
+  width         : 100px;
+  height         : 135px;
+  float         : left;
+  padding       : 10px;
+  position       : absolute;
+  right         : 10px;
+  top         : 265px;
+}
+
+#intro span img{
+  width         : 100px;
+}
+
+@media (min-width: 1100px) {
+  #intro{
+    height         : 530px;
+  }
+
+  #intro span{
+    top         : 350px;
   }
 }
 
-div#contact{
-}
-
-.section{
-  border              : solid 5px #ccc;
-  height              : 530px;
-
-  h1{
-    text-align        : center;
-  }
-}
