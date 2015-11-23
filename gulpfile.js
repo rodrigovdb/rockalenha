@@ -19,19 +19,21 @@ var paths = {
   images        : './src/images/*/*',
 
   jquery        : './bower_components/jquery/dist/jquery.min.js',
-  bootstrap_js  : './bower_components/bootstrap/dist/js/bootstrap.min.js',
-  bootstrap_css : './bower_components/bootstrap/dist/css/*.min.css',
-}
+        }
 
 gulp.task('sass', function(){
     gulp.src([
-          paths.bootstrap_css,
           paths.sass
         ])
+        .pipe(sass({
+          includePaths: [
+            './bower_components/bourbon/app/assets/stylesheets',
+            './bower_components/neat/app/assets/stylesheets',
+          ],
+          errLogToConsole: true
+        }))
         .pipe(gulpif(/\.scss$/, sass({ style: 'compressed' })))
         .pipe(order([
-          'bootstrap.min.css',
-          'bootstrap-theme.min.css',
           'src/sass/*.scss'
         ]))
         .pipe(concat('./main.css'))
@@ -41,13 +43,11 @@ gulp.task('sass', function(){
 gulp.task('coffee', function(){
   gulp.src([
         paths.jquery,
-        //paths.bootstrap_js,
         paths.coffee,
       ])
       .pipe(gulpif(/\.coffee$/, coffee({bare: true})))
       .pipe(order([
         'jquery.min.js',
-        'bootstrap.min.js',
         'src/coffee/*.coffee'
       ]))
       .pipe(concat('./main.js'))
