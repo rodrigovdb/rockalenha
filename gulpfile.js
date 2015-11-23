@@ -21,7 +21,6 @@ var paths = {
   jquery        : './bower_components/jquery/dist/jquery.min.js',
   bootstrap_js  : './bower_components/bootstrap/dist/js/bootstrap.min.js',
   bootstrap_css : './bower_components/bootstrap/dist/css/*.min.css',
-  parallax      : './bower_components/scroll-parallax/dist/Parallax.min.js',
 }
 
 gulp.task('sass', function(){
@@ -43,14 +42,12 @@ gulp.task('coffee', function(){
   gulp.src([
         paths.jquery,
         //paths.bootstrap_js,
-        paths.parallax,
         paths.coffee,
       ])
       .pipe(gulpif(/\.coffee$/, coffee({bare: true})))
       .pipe(order([
         'jquery.min.js',
         'bootstrap.min.js',
-        'Parallax.min.js',
         'src/coffee/*.coffee'
       ]))
       .pipe(concat('./main.js'))
