@@ -1,3 +1,3 @@
 $(document).ready ->
-  #alert 'oee'
+  alert 'oee'
   return

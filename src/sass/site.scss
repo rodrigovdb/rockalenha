@@ -28,32 +28,143 @@ body{
     background-position   : center top;
     background-repeat     : no-repeat;
 
-    @media (max-width: 1088px) {
+    @media (min-width: 900px) {
+      background-size       : 1088px;
+      min-height            : 440px;
+    }
+    @media (max-width: 900px) {
       background-size       : 100%;
-      min-height            : 200px;
+      min-height            : 316px;
+    }
+    @media (max-width: 650px) {
+      background-size       : 100%;
+      min-height            : 246px;
+    }
+    @media (max-width: 500px) {
+      background-size       : 100%;
+      min-height            : 180px;
     }
 
-    @media (min-width: 1088px){
-      background-size       : 1088px;
-      height                : 440px;
+    @media (max-width: 359px) {
+      background-image      : none;
+      background-color      : #000;
     }
 
     span{
       @include background-image(url(../img/logos/logo.png));
 
       float               : right;
-      width               : 150px;
-      height              : 200px;
-      position            : relative;
-      margin-top          : 230px;
-      margin-right        : 10px;
-
       border              : solid 10px #000;
 
       background-position : center, center;
       background-repeat   : no-repeat;
       background-size     : 100%;
       background-color    : #000;
+
+      position            : relative;
+      margin-right        : 10px;
+
+      @media (min-width: 900px) {
+        width               : 150px;
+        height              : 200px;
+        margin-top          : 230px;
+      }
+
+      @media (max-width: 900px) {
+        width               : 100px;
+        height              : 140px;
+        margin-top          : 166px;
+      }
+
+      @media (max-width: 650px) {
+        width               : 80px;
+        height              : 100px;
+        margin-top          : 136px;
+      }
+
+      @media (max-width: 500px) {
+        width               : 60px;
+        height              : 80px;
+        margin-top          : 90px;
+      }
+    }
+  }
+
+  #contact{
+    display: none;
+    a{
+      img{
+        width : 100px;
+      }
+    }
+  }
+
+  #menu{
+    @media (min-width: 900px) {
+      margin-top  : -112px;
+    }
+
+    @media (max-width: 900px) {
+      margin-top  : -87px;
+    }
+
+    @media (max-width: 650px) {
+      margin-top  : -67px;
+    }
+
+    @media (max-width: 500px) {
+      margin-top  : -57px;
+    }
+
+    #menu_items{
+      .menu_item{
+        display : inline;
+
+        i.contact-icons{
+          @include border-style(solid);
+          @include border-top-radius(100px);
+          @include border-bottom-radius(100px);
+
+          color       : #fff;
+          text-align  : center;
+
+          @media (min-width: 900px) {
+            @include margin(0px 10px);
+            @include size(100px);
+            @include border-width(8px);
+            @include padding(17px 6px);
+           
+            font-size   : 55px;
+          }
+
+          @media (max-width: 900px) {
+            @include margin(0px 10px);
+            @include size(75px);
+            @include border-width(6px);
+            @include padding(13px 6px);
+
+            font-size   : 37px;
+          }
+
+          @media (max-width: 650px) {
+            @include margin(0px 10px);
+            @include size(55px);
+            @include border-width(4px);
+            @include padding(9px 6px);
+
+            font-size   : 28px;
+          }
+
+          @media (max-width: 500px) {
+            @include margin(0px 5px);
+            @include size(45px);
+            @include border-width(3px);
+            @include padding(8px 6px);
+
+            font-size   : 23px;
+          }
+        }
+      }
     }
   }
 }

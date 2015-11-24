@@ -13,9 +13,12 @@ html(lang='pt-br')
 
     title Banda Rock a Lenha
 
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/main.css")
+
     script(src='js/main.js')
     //script(src='http://www.skypeassets.com/i/scom/js/skype-uri.js')
   body
-
-    block content
+    #content
+      include ../includes/_intro.jade
+      block content
