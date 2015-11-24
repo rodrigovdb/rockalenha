@@ -90,7 +90,7 @@ body{
     }
   }
 
-  #contact{
+  #contact_link{
     display: none;
     a{
       img{
@@ -99,7 +99,9 @@ body{
     }
   }
 
-  #menu{
+  #contact{
+    margin-bottom : 20px;
+
     @media (min-width: 900px) {
       margin-top  : -112px;
     }
@@ -116,8 +118,8 @@ body{
       margin-top  : -57px;
     }
 
-    #menu_items{
-      .menu_item{
+    #contact_items{
+      .contact_item{
         display : inline;
 
         i.contact-icons{
@@ -165,6 +167,49 @@ body{
           }
         }
       }
+    }
+  }
+
+  .section-odd, .section-even{
+    @include padding(10px 10px);
+    @include margin(0px 0px 10px 0px);
+    @include border-top-radius(5px);
+    @include border-bottom-radius(5px);
+
+    border  : solid 2px #ddd;
+
+    h3 {
+      text-align  : center;
+    }
+  }
+
+  .section-odd{
+    background-color  : #efefef;
+  }
+
+  .section-even{
+    background-color  : #fff;
+  }
+
+  #watch{
+    @media (max-width: 980px) {
+      text-align  : center;
+    }
+
+    iframe{
+      @media (min-width: 980px) {
+        margin  : 10px;
+      }
+
+      @media (max-width: 980px) {
+        width : 100%;
+      }
+    }
+  }
+
+  #about{
+    p{
+      line-height : 25px;
     }
   }
 }
