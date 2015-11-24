@@ -21,6 +21,39 @@ body{
   @include background(#fff);
   @include padding(10px 10px 10px 10px);
 
+  #menu{
+    @include background(linear-gradient(#000, #555) left repeat);
+    position          : fixed;
+    top               : 0;
+    height            : 40px;
+    width             : 100%;
+    padding           : 10px;
+    color             : #fff;
+    font-weight       : bold;
+
+    ul{
+      @include margin(0);
+      @include padding(0);
+
+      li{
+        @include margin(0px);
+        @include padding(10px 40px);
+        list-style-type : none;
+        display         : inline;
+
+        a, a:visited, a:active{
+          color           : #fff;
+          text-decoration : none;
+        }
+      }
+
+      li:hover{
+        @include background(linear-gradient(#333, #777) left repeat);
+        text-decoration : underline;
+      }
+    }
+  }
+
   #intro{
     margin                : auto -10px;
     background-image      : url(../img/pics/citra.jpg);
