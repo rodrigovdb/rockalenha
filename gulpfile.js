@@ -59,7 +59,7 @@ gulp.task('jade', function(){
   var YOUR_LOCALS = {};
 
   gulp.src(paths.jade)
-      .pipe(jade({ locals: YOUR_LOCALS }))
+      .pipe(jade({ client: true }))
       .pipe(gulp.dest('./build/'))
 });
 
@@ -90,7 +90,10 @@ gulp.task('watch', function(){
 });
 
 gulp.task('deploy', ['compile', 'copy'], function() {
-  return gulp.src('./build/**/*')
+  return gulp.src([
+                './build/*',
+                './build/**/*'
+              ])
              .pipe(ghPages());
 });
 
