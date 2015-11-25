@@ -1,0 +1,21 @@
+#contact_link
+  a(href='#', onclick="$('#menu').slideToggle(); return false;", name='contacts_anchor')
+    img(src='img/contacts/contact.png', alt='[Contatos]', title='Contate-nos')
+    span Contatos
+#contact
+  #contact_items
+    .contact_item
+      a(href='skype:rodrigovdb?chat', onclick="Skype.tryAnalyzeSkypeUri('chat', '0');" title="Converse no Skype")
+        i.contact-icons.fa.fa-skype
+    .contact_item
+      a(href='https://www.facebook.com/RockaLenha', target='_BLANK' title="Siga-nos no Facebook")
+        i.contact-icons.fa.fa-facebook
+    .contact_item
+      a(href='https://soundcloud.com/rockalenha', target='_BLANK' title="Ouça-nos no SoundCloud")
+        i.contact-icons.fa.fa-soundcloud
+    .contact_item
+      a(href='https://www.youtube.com/channel/UCeRfrQ33igiZ16efTNMuSMQ', target='_BLANK' title="Assista-nos no Youtube")
+        i.contact-icons.fa.fa-youtube
+    .contact_item
+      a(href='mailto:contato@rockalenha.com.br?Subject=Contato%20Via%20Site' title="Envie um e-mail")
+        i.contact-icons.fa.fa-envelope

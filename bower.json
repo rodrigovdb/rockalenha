@@ -1,0 +1,25 @@
+{
+  "name": "rockalenha",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rodrigovdb/rockalenha",
+  "authors": [
+    "Rodrigo Otavio van den Berg Maia <rodrigo@rockalenha.com.br>"
+  ],
+  "description": "Rock a Lenha Site",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "build/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.2"
+  }
+}
