@@ -34,7 +34,9 @@ And access http://localhost:3000
 
 # Deploying
 
-Soon
+```
+$ gulp deploy
+```
 
 # How to contribute
 
