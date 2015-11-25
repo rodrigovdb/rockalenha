@@ -17,9 +17,10 @@ var paths = {
   jade          : './src/jade/*.jade',
 
   images        : './src/images/*/*',
+  cname         : './src/CNAME',
 
   jquery        : './bower_components/jquery/dist/jquery.min.js',
-        }
+}
 
 gulp.task('sass', function(){
     gulp.src([
@@ -67,7 +68,12 @@ gulp.task('images', function () {
       .pipe(gulp.dest('./build/img'));
 });
 
-gulp.task('copy', ['images']);
+gulp.task('cname', function () {
+  gulp.src(paths.cname)
+      .pipe(gulp.dest('./build'));
+});
+
+gulp.task('copy', ['images', 'cname']);
 gulp.task('compile', ['sass', 'coffee', 'jade']);
 
 gulp.task('server', function () {
@@ -83,7 +89,7 @@ gulp.task('watch', function(){
   gulp.watch('./src/jade/**/*.jade',    ['jade']);
 });
 
-gulp.task('deploy', ['compile'], function() {
+gulp.task('deploy', ['compile', 'copy'], function() {
   return gulp.src('./build/**/*')
              .pipe(ghPages());
 });
