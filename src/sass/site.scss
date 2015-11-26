@@ -74,7 +74,6 @@ body{
 
 #contact{
   background-color  : $black-tone;
-  margin-top        : (-4px);
 
   .container{
     @include outer-container;
@@ -83,43 +82,20 @@ body{
       img{
         @include size(100px 130px);
 
-        float     : left;
-        border    : solid 3px #fff;
-        position  : relative;
-        top       : -65px;
-        left      : 10px;
+        float             : left;
+        border            : solid 3px #fff;
+        position          : relative;
+        top               : -65px;
+        left              : 10px;
+        padding           : 5px;
+        margin-bottom     : -50px;
+        background-color  : #000;
 
         @media (max-width: $min-width){
           @include size(70px 80px);
 
           top   : -30px;
           left  : 10px;
-        }
-      }
-    }
-
-    ul{
-      @include padding(20px 0px);
-      @include margin(0px);
-
-      text-align      : right;
-      list-style-type : none;
-      float           : right;
-
-      li{
-        @include padding(5px);
-
-        font-size : 30px;
-
-        display : inline;
-
-        a, a:visited, a:active{
-          color           : #fff;
-          text-decoration : none;
-        }
-
-        @media (max-width: $min-width) {
-          font-size : 20px;
         }
       }
     }
@@ -135,6 +111,32 @@ body{
 
     @media (max-width: $min-width) {
       font-size   : 18px;
+    }
+  }
+
+  ul{
+    @include padding(20px 0px);
+    @include margin(0px);
+
+    text-align      : right;
+    list-style-type : none;
+    float           : right;
+
+    li{
+      @include padding(5px);
+
+      font-size : 30px;
+
+      display : inline;
+
+      a, a:visited, a:active{
+        color           : #fff;
+        text-decoration : none;
+      }
+
+      @media (max-width: $min-width) {
+        font-size : 20px;
+      }
     }
   }
 }
@@ -224,13 +226,8 @@ body{
   }
 
   .section-odd, .section-even{
-    @include padding(10px 10px);
-    @include margin(0px 0px 10px 0px);
-    //@include border-top-radius(5px);
-    //@include border-bottom-radius(5px);
-
-
-    //border  : solid 2px #ddd;
+    @include padding(20px);
+    @include margin(25px 0px);
 
     h3 {
       text-align  : center;
@@ -260,8 +257,6 @@ body{
   }
 
   #about{
-    p{
-      line-height : 25px;
-    }
+    line-height : 30px;
   }
 }
