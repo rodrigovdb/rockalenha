@@ -1,0 +1,200 @@
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background: #efefef;
+  background: #efefef;
+  padding: 0px;
+  margin: -20px 0px 0px;
+  font-family: "Raleway", sans-serif;
+  color: #555; }
+
+@media (min-width: 1066px) {
+  #intro {
+    background-image: url(../img/pics/citra_bw.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 500px; } }
+
+#intro img {
+  width: 100%;
+  z-index: -1; }
+  @media (min-width: 1066px) {
+    #intro img {
+      display: none; } }
+
+#menu {
+  background: -webkit-linear-gradient(#000, #555);
+  background: linear-gradient(#000, #555);
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  float: left;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold; }
+  #menu ul {
+    margin: 0;
+    padding: 0; }
+    #menu ul li {
+      margin: 0px;
+      padding: 10px 40px;
+      list-style-type: none;
+      display: inline; }
+      #menu ul li a, #menu ul li a:visited, #menu ul li a:active {
+        color: #fff;
+        text-decoration: none; }
+    #menu ul li:hover {
+      background: -webkit-linear-gradient(#333, #777);
+      background: linear-gradient(#333, #777);
+      text-decoration: underline; }
+
+#contact {
+  background-color: #242323; }
+  #contact .container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    #contact .container::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #contact .container #logo img {
+      height: 130px;
+      width: 100px;
+      float: left;
+      border: solid 3px #fff;
+      position: relative;
+      top: -65px;
+      left: 10px;
+      padding: 5px;
+      margin-bottom: -50px;
+      background-color: #000; }
+      @media (max-width: 500px) {
+        #contact .container #logo img {
+          height: 80px;
+          width: 70px;
+          top: -30px;
+          left: 10px; } }
+  #contact #title {
+    padding: 20px 0px 0px 20px;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    float: left; }
+    @media (max-width: 500px) {
+      #contact #title {
+        font-size: 18px; } }
+  #contact ul {
+    padding: 20px 0px;
+    margin: 0px;
+    text-align: right;
+    list-style-type: none;
+    float: right; }
+    #contact ul li {
+      padding: 5px;
+      font-size: 30px;
+      display: inline; }
+      #contact ul li a, #contact ul li a:visited, #contact ul li a:active {
+        color: #fff;
+        text-decoration: none; }
+      @media (max-width: 500px) {
+        #contact ul li {
+          font-size: 20px; } }
+
+#content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px; }
+  #content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #content #contact_link {
+    display: none; }
+    #content #contact_link a img {
+      width: 100px; }
+  #content #contact {
+    margin-bottom: 20px; }
+    @media (min-width: 900px) {
+      #content #contact {
+        margin-top: -112px; } }
+    @media (max-width: 900px) {
+      #content #contact {
+        margin-top: -87px; } }
+    @media (max-width: 650px) {
+      #content #contact {
+        margin-top: -67px; } }
+    @media (max-width: 500px) {
+      #content #contact {
+        margin-top: -57px; } }
+    #content #contact #contact_items .contact_item {
+      display: inline; }
+      #content #contact #contact_items .contact_item i.contact-icons {
+        border-style: solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        color: #fff;
+        text-align: center; }
+        @media (min-width: 900px) {
+          #content #contact #contact_items .contact_item i.contact-icons {
+            margin: 0px 10px;
+            height: 100px;
+            width: 100px;
+            border-width: 8px;
+            padding: 17px 6px;
+            font-size: 55px; } }
+        @media (max-width: 900px) {
+          #content #contact #contact_items .contact_item i.contact-icons {
+            margin: 0px 10px;
+            height: 75px;
+            width: 75px;
+            border-width: 6px;
+            padding: 13px 6px;
+            font-size: 37px; } }
+        @media (max-width: 650px) {
+          #content #contact #contact_items .contact_item i.contact-icons {
+            margin: 0px 10px;
+            height: 55px;
+            width: 55px;
+            border-width: 4px;
+            padding: 9px 6px;
+            font-size: 28px; } }
+        @media (max-width: 500px) {
+          #content #contact #contact_items .contact_item i.contact-icons {
+            margin: 0px 5px;
+            height: 45px;
+            width: 45px;
+            border-width: 3px;
+            padding: 8px 6px;
+            font-size: 23px; } }
+  #content .section-odd, #content .section-even {
+    padding: 20px;
+    margin: 25px 0px; }
+    #content .section-odd h3, #content .section-even h3 {
+      text-align: center; }
+  #content .section-odd {
+    background-color: #fff; }
+  #content .section-even {
+    background-color: #fff; }
+  #content #watch {
+    text-align: center; }
+    @media (min-width: 980px) {
+      #content #watch iframe {
+        margin: 10px; } }
+    @media (max-width: 980px) {
+      #content #watch iframe {
+        width: 100%; } }
+  #content #about {
+    line-height: 30px; }
