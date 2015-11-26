@@ -60,6 +60,7 @@ gulp.task('jade', function(){
 
   gulp.src(paths.jade)
       .pipe(jade({ client: true }))
+      //.pipe(jade({ locals: YOUR_LOCALS }))
       .pipe(gulp.dest('./build/'))
 });
 
