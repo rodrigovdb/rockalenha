@@ -57,17 +57,17 @@ body {
       background: linear-gradient(#333, #777);
       text-decoration: underline; }
 
-#contact {
+#contact_bar {
   background-color: #242323; }
-  #contact .container {
+  #contact_bar .container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
-    #contact .container::after {
+    #contact_bar .container::after {
       clear: both;
       content: "";
       display: table; }
-    #contact .container #logo img {
+    #contact_bar .container #logo img {
       height: 130px;
       width: 100px;
       float: left;
@@ -79,35 +79,35 @@ body {
       margin-bottom: -50px;
       background-color: #000; }
       @media (max-width: 500px) {
-        #contact .container #logo img {
+        #contact_bar .container #logo img {
           height: 80px;
           width: 70px;
           top: -30px;
           left: 10px; } }
-  #contact #title {
+  #contact_bar #title {
     padding: 20px 0px 0px 20px;
     color: #fff;
     font-size: 30px;
     text-transform: uppercase;
     float: left; }
     @media (max-width: 500px) {
-      #contact #title {
+      #contact_bar #title {
         font-size: 18px; } }
-  #contact ul {
+  #contact_bar ul {
     padding: 20px 0px;
     margin: 0px;
     text-align: right;
     list-style-type: none;
     float: right; }
-    #contact ul li {
+    #contact_bar ul li {
       padding: 5px;
       font-size: 30px;
       display: inline; }
-      #contact ul li a, #contact ul li a:visited, #contact ul li a:active {
+      #contact_bar ul li a, #contact_bar ul li a:visited, #contact_bar ul li a:active {
         color: #fff;
         text-decoration: none; }
       @media (max-width: 500px) {
-        #contact ul li {
+        #contact_bar ul li {
           font-size: 20px; } }
 
 #content {
@@ -119,27 +119,27 @@ body {
     clear: both;
     content: "";
     display: table; }
-  #content #contact_link {
+  #content #contact_bar_link {
     display: none; }
-    #content #contact_link a img {
+    #content #contact_bar_link a img {
       width: 100px; }
-  #content #contact {
+  #content #contact_bar {
     margin-bottom: 20px; }
     @media (min-width: 900px) {
-      #content #contact {
+      #content #contact_bar {
         margin-top: -112px; } }
     @media (max-width: 900px) {
-      #content #contact {
+      #content #contact_bar {
         margin-top: -87px; } }
     @media (max-width: 650px) {
-      #content #contact {
+      #content #contact_bar {
         margin-top: -67px; } }
     @media (max-width: 500px) {
-      #content #contact {
+      #content #contact_bar {
         margin-top: -57px; } }
-    #content #contact #contact_items .contact_item {
+    #content #contact_bar #contact_items .contact_item {
       display: inline; }
-      #content #contact #contact_items .contact_item i.contact-icons {
+      #content #contact_bar #contact_items .contact_item i.contact-icons {
         border-style: solid;
         border-top-left-radius: 100px;
         border-top-right-radius: 100px;
@@ -148,7 +148,7 @@ body {
         color: #fff;
         text-align: center; }
         @media (min-width: 900px) {
-          #content #contact #contact_items .contact_item i.contact-icons {
+          #content #contact_bar #contact_items .contact_item i.contact-icons {
             margin: 0px 10px;
             height: 100px;
             width: 100px;
@@ -156,7 +156,7 @@ body {
             padding: 17px 6px;
             font-size: 55px; } }
         @media (max-width: 900px) {
-          #content #contact #contact_items .contact_item i.contact-icons {
+          #content #contact_bar #contact_items .contact_item i.contact-icons {
             margin: 0px 10px;
             height: 75px;
             width: 75px;
@@ -164,7 +164,7 @@ body {
             padding: 13px 6px;
             font-size: 37px; } }
         @media (max-width: 650px) {
-          #content #contact #contact_items .contact_item i.contact-icons {
+          #content #contact_bar #contact_items .contact_item i.contact-icons {
             margin: 0px 10px;
             height: 55px;
             width: 55px;
@@ -172,7 +172,7 @@ body {
             padding: 9px 6px;
             font-size: 28px; } }
         @media (max-width: 500px) {
-          #content #contact #contact_items .contact_item i.contact-icons {
+          #content #contact_bar #contact_items .contact_item i.contact-icons {
             margin: 0px 5px;
             height: 45px;
             width: 45px;
@@ -198,3 +198,17 @@ body {
         width: 100%; } }
   #content #about {
     line-height: 30px; }
+  #content #contact {
+    text-align: center; }
+    #content #contact ul {
+      padding: 0px;
+      margin: 0px; }
+      #content #contact ul li {
+        display: inline; }
+        #content #contact ul li a, #content #contact ul li a:visited, #content #contact ul li a:active {
+          color: #555;
+          font-size: 40px;
+          margin: 0px 10px; }
+          @media (min-width: 980px) {
+            #content #contact ul li a, #content #contact ul li a:visited, #content #contact ul li a:active {
+              font-size: 80px; } }
