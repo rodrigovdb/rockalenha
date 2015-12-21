@@ -72,7 +72,7 @@ body{
   }
 }
 
-#contact{
+#contact_bar{
   background-color  : $black-tone;
 
   .container{
@@ -145,7 +145,7 @@ body{
   @include outer-container;
   @include padding(10px 10px 10px 10px);
 
-  #contact_link{
+  #contact_bar_link{
     display: none;
     a{
       img{
@@ -154,7 +154,7 @@ body{
     }
   }
 
-  #contact{
+  #contact_bar{
     margin-bottom : 20px;
 
     @media (min-width: 900px) {
@@ -258,5 +258,28 @@ body{
 
   #about{
     line-height : 30px;
+  }
+
+  #contact{
+    text-align  : center;
+
+    ul{
+      @include  padding(0px);
+      @include  margin(0px);
+
+      li{
+        display : inline;
+
+        a, a:visited, a:active{
+          color     : #555;
+          font-size : 40px;
+          margin    : 0px 10px;
+
+          @media (min-width: 980px) {
+            font-size : 80px;
+          }
+        }
+      }
+    }
   }
 }

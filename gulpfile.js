@@ -59,8 +59,8 @@ gulp.task('jade', function(){
   var YOUR_LOCALS = {};
 
   gulp.src(paths.jade)
-      .pipe(jade({ client: true }))
-      //.pipe(jade({ locals: YOUR_LOCALS }))
+      //.pipe(jade({ client: true }))
+      .pipe(jade({ locals: YOUR_LOCALS }))
       .pipe(gulp.dest('./build/'))
 });
 
