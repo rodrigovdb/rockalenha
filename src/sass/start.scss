@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "bourbon";
+@import "neat";
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+$font-family-base: 'Raleway', sans-serif;
+$black-tone: #242323;
+$min-width: 500px;
+
+body{
+  @include background(#efefef);
+  @include padding(0px 0px 0px 0px);
+  @include margin(-20px 0px 0px 0px);
+
+  font-family : $font-family-base;
+  color       : #555;
+}
+
+#start_logo{
+  @include background(#000);
+  @include border-top-radius(50%);
+  @include border-right-radius(50%);
+  @include border-bottom-radius(50%);
+  @include border-left-radius(50%);
+
+  width   : 30%;
+  margin  : 5% auto;
+  padding : 5% 7%;
+
+  box-shadow: 0 0 20px;
+  //box-shadow: 0 0 10px rgba(35, 173, 278, 1);
+
+  img{
+    width : 100%;
+  }
+
+  @media (max-width: 600px){
+    @include border-width(5px);
+
+    margin-top  : 50px;
+  }
+}
+
+#start_contact{
+  @include border-top-radius(5px);
+  @include border-right-radius(5px);
+  @include border-bottom-radius(5px);
+  @include border-left-radius(5px);
+
+  width       : 30%;
+  margin      : -3% auto 5% auto;
+  text-align  : center;
+  font-size   : 30px;
+  padding     : 10px 0px;
+
+  a{
+    color           : #333;
+    text-decoration : none;
+  }
+
+  a:hover{
+    color : #000;
+
+    span{
+      text-decoration : underline;
+    }
+  }
+}
+
+#start_contact:hover{
+  box-shadow: 0 0 10px; //rgba(35, 173, 278, 1);
+}
