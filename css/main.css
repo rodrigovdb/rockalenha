@@ -212,3 +212,66 @@ body {
           @media (min-width: 980px) {
             #content #contact ul li a, #content #contact ul li a:visited, #content #contact ul li a:active {
               font-size: 80px; } }
+
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background: #efefef;
+  background: #efefef;
+  padding: 0px;
+  margin: -20px 0px 0px;
+  font-family: "Raleway", sans-serif;
+  color: #555; }
+
+#start_logo {
+  background: #000;
+  background: #000;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  width: 30%;
+  margin: 5% auto;
+  padding: 5% 7%;
+  box-shadow: 0 0 20px; }
+  #start_logo img {
+    width: 100%; }
+  @media (max-width: 600px) {
+    #start_logo {
+      border-width: 5px;
+      margin-top: 50px; } }
+
+#start_contact {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 30%;
+  margin: -3% auto 5% auto;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0px; }
+  #start_contact a {
+    color: #333;
+    text-decoration: none; }
+  #start_contact a:hover {
+    color: #000; }
+    #start_contact a:hover span {
+      text-decoration: underline; }
+
+#start_contact:hover {
+  box-shadow: 0 0 10px; }
